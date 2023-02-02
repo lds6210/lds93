@@ -10,10 +10,10 @@ let extraScore = 1;
 let wuDi = true;
 
 // 첫 번째 과일: 숫자를 0-10으로 수정, 0은 포도, 9는 수박 반
-let firstFruit = 10;
+let firstFruit = 0;
 
 // 과일 합성 반전: 거짓에서 참으로 변경됨
-let reverseLevelUp = true;
+let reverseLevelUp = false;
 
 // 생성할 과일 지정: 기본값: 반전 안 함 0-5, 반전 켜기 6-11, 해당 숫자를 수정하여 무작위로 생성되는 과일 범위 제어
 const minRandomFruitNum = reverseLevelUp ? 6 : 0; // 무작위 과일 최소값 생성(0-10) 0은 포도, 9는 수박 반
