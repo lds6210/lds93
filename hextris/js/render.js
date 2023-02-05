@@ -72,15 +72,15 @@ function renderBeginningText() {
     var mob, fontSize;
     if(/mobile|Mobile|iOS|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         mob = true;
-        input_text = 'Tap the screen\'s left and right'
-        action_text = 'sides to rotate the hexagon'
-        score_text = 'Match 3+ blocks to score'
+        input_text = '화면의 좌우를 탭하세요.'
+        action_text = '육각형을 회전시키는 변'
+        score_text = '3개 이상 합치면 점수가 됩니다.'
         fontSize = 35
     } else {
         mob = false
-        input_text = 'Use the right and left arrow keys'
-        action_text = 'to rotate the hexagon'
-        score_text = 'Match 3+ blocks to score!'
+        input_text = '화면의 좌우를 탭하세요.'
+        action_text = '육각형을 회전시키는 변'
+        score_text = '3개 이상 합치면 점수가 됩니다.!'
         fontSize = 27
     }
 	renderText((trueCanvas.width)/2 + 2 * settings.scale,upperheight-0*settings.scale, fontSize, '#2c3e50', input_text);
