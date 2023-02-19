@@ -2,7 +2,7 @@
  * 점수 팝업
  * @type {number}
  */
-var number = 2;
+let number = 2;
 if (selectModal) {
   let extraScoreStr = '';
   while (isNaN(parseInt(extraScoreStr))) {
@@ -3628,13 +3628,18 @@ window.__require = function e(t, n, o) {
         maxScoreText: cc.Label
       },
       onLoad: function () {
-        this.bgLayer.color = cc.color("#68b951"), this.standardScore = c.standScore, this.game_max_score = 200, this.rigthBtnGameName = null, this.rightBtnGameUrl = null, this.UIPosChange(), this.addClickBtns();
-        var e = "\u6700\u9ad8\u7eaa\u5f55:",
-          t = this.returnCurrentLanType();
+        this.bgLayer.color = cc.color("#68b951"), 
+        this.standardScore = c.standScore, 
+        this.game_max_score = 200, 
+        this.rigthBtnGameName = null, 
+        this.rightBtnGameUrl = null,
+        this.UIPosChange(), 
+        this.addClickBtns();
+        var e = "\u6700\u9ad8\u7eaa\u5f55:";
+        var t = this.returnCurrentLanType();
         e = 1 == t ? "\u6700\u9ad8\u7eaa\u5f55:" : 2 == t ? "\u6700\u9ad8\u7d00\u9304:" : 4 == t ? "\ucd5c\uace0 \uae30\ub85d:" : "Highest Record:";
-        var n = c.gameScore,
-          o = this.getHighScore();
-        console.log(o);
+        var n = c.gameScore
+        var o = this.getHighScore();
         o ? o < c.gameScore && (this.setHisSocre(c.gameScore), o = c.gameScore) : (this.setHisSocre(c.gameScore), o = n), this.maxScoreText.string = e + o
       },
       returnCurrentLanType: function () {
@@ -3657,24 +3662,28 @@ window.__require = function e(t, n, o) {
       getHighScore: function () {
         return cc.sys.localStorage.getItem("HigScore_JiaoTong")
       },
-      UIPosChange: function () {
-        this.overScoreT.string = c.gameScore, console.log("lang", a.langugeType);
-        var e = null;
-        e = 1 == a.langugeType ? this.getContentByScore(c.gameScore, a.gameNameText) : this.getContentByScore2(c.gameScore, a.gameNameText), console.log("nihao", a.endHttpShowInfo), null != a.endHttpShowInfo && "" != a.endHttpShowInfo && (cc.log("gototo"), e = a.endHttpShowInfo), this.overInfoT.string = e;
-        var t = this.overInfoT.node.height;
-        if (this.overInfoT.node.height = Math.ceil(e.length * this.overInfoT.fontSize / this.overInfoT.node.width) * t, document.title = e, console.log("gameOver txtMoreText", a.txtMoreText), this.midGameText.string = a.txtMoreText, this.leftBtnText.string = a.txtAgainText, this.tempArr = this.gameFocus(), null != a.ranLinkUrl()) {
-          var n = a.ranLinkUrl(),
-            o = a.ranLinkData.gameList[n].gameName;
-          this.rigthBtnGameName = o, this.rightBtnGameUrl = a.ranLinkData.gameList[n].gameUrl
-        }
-        null != this.rigthBtnGameName && "" != this.rigthBtnGameName ? this.rightBtnText.string = this.rigthBtnGameName : this.rightBtnText.string = this.tempArr[0]
-      },
-      gameFocus: function () {
-        var e = [],
-          t = null,
-          n = null;
-        return Math.random() <= .5 ? (t = a.gameEndName1, n = a.gameEndUrl1) : (t = a.gameEndName2, n = a.gameEndUrl2), e.push(t), e.push(n), e
-      },
+      // UIPosChange: function () {
+      //   this.overScoreT.string = c.gameScore, console.log("lang", a.langugeType);
+      //   var e = null;
+      //   e = 1 == a.langugeType ? this.getContentByScore(c.gameScore, a.gameNameText) : this.getContentByScore2(c.gameScore, a.gameNameText), console.log("nihao", a.endHttpShowInfo), null != a.endHttpShowInfo && "" != a.endHttpShowInfo && (cc.log("gototo"), e = a.endHttpShowInfo), this.overInfoT.string = e;
+      //   var t = this.overInfoT.node.height;
+      //   if (this.overInfoT.node.height = Math.ceil(e.length * this.overInfoT.fontSize / this.overInfoT.node.width) * t, document.title = e, console.log("gameOver txtMoreText", a.txtMoreText), this.midGameText.string = a.txtMoreText, this.leftBtnText.string = a.txtAgainText, this.tempArr = this.gameFocus(), null != a.ranLinkUrl()) {
+      //     var n = a.ranLinkUrl(),
+      //       o = a.ranLinkData.gameList[n].gameName;
+      //     this.rigthBtnGameName = o, this.rightBtnGameUrl = a.ranLinkData.gameList[n].gameUrl
+      //   }
+      //   null != this.rigthBtnGameName && "" != this.rigthBtnGameName ? this.rightBtnText.string = this.rigthBtnGameName : this.rightBtnText.string = this.tempArr[0]
+      // },
+      // UIPosChange: function () {
+
+      // },
+
+      // gameFocus: function () {
+      //   var e = [],
+      //     t = null,
+      //     n = null;
+      //   return Math.random() <= .5 ? (t = a.gameEndName1, n = a.gameEndUrl1) : (t = a.gameEndName2, n = a.gameEndUrl2), e.push(t), e.push(n), e
+      // },
       addClickBtns: function () {
         var e = this;
         e.moreBtn.node.on(cc.Node.EventType.TOUCH_START, function (e) {
