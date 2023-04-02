@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 이서윤체 폰트 적용을 위한 코드 */
+    @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+            format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* body태그 자체에 css 요소 부여 */
+    body {
+        font-family: "LeeSeoyun";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("./background.png");
+    }
+
+    .container {
+        width: 200px;
+        height: 100%;
+        background-color: #ff9d73;
+    }
+
+    .photos {
+        margin-top: 30px;
+    }
+
+    .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: cover;
+        position: relative;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-title {
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+        
+    }
+
+    .f-date {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    #image1 {
+        background-image: url('./image1.jpg');
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: cover;
+    }
+
+    #image2 {
+        background-image: url('./image2.jpg');
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: cover;
+    }
+
+    #image3 {
+        background-image: url('./image3.jpg');
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: cover;
+    }
+
+    #image4 {
+        background-image: url('./image4.jpg');
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: cover;
+    }
+
+    .photo_description {
+        color: white;
+        background-color: black;
+
+        width: fit-content;
+        padding: 0px 5px;
+        margin-bottom: 5px;
+
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desec1" class="photo_description">
+                    여의도 벚꽃거리!!
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desec1" class="photo_description">
+                    올 해도 벚꽃이 예쁘네요
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desec1" class="photo_description">
+                    젠틀몬스터 끌끌
+                </span></div>
+            <div id="image4" class="photo-frame">
+                <span id="desec1" class="photo_description">
+                    얄밉다 ㅋㅋ
+                </span>
+        </div>
+        <div class = "footer">
+            <p class='f-title'>Happy Lunch Time</p>
+            <p class='f-date'>2023.04.01</p>
+        </div>
+    </div>
+</body>
+</html>
