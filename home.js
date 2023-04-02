@@ -1,5 +1,6 @@
 const gameButton = document.querySelector("#game-button");
 const chatButton = document.querySelector("#chat-button");
+const pictureButton = document.querySelector("#picture-button");
 
 gameButton.addEventListener("click", () => {
   gameButton.style.backgroundColor = "#ff9800";
@@ -12,4 +13,10 @@ chatButton.addEventListener("click", () => {
   chatButton.style.backgroundColor = "#9c27b0";
   chatButton.textContent = "로딩 중...";
   location.href = "./chatgpt/index.html";
+});
+
+pictureButton.addEventListener("click", () => {
+  chatButton.style.backgroundColor = "#4c2800";
+  chatButton.textContent = "로딩 중...";
+  location.href = "./pictureOfLife/index.html";
 });
