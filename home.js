@@ -24,5 +24,5 @@ chatButton.addEventListener("click", () => {
 pictureButton.addEventListener("click", () => {
   chatButton.style.backgroundColor = "#4c2800";
   chatButton.textContent = "로딩 중...";
-  location.href = "./pp/index.html";
+  location.href = "./pictureOfLife/index.html";
 });
