@@ -1,3 +1,23 @@
+@media only screen and (max-width: 600px) {
+  #buttons-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  /* 첫 번째 버튼의 margin-top 값을 1rem으로 지정합니다. */
+  button:first-child {
+    margin-top: 1rem;
+  }
+}
+
 #buttons-container {
   display: flex;
   justify-content: center;
@@ -29,6 +49,10 @@ button {
 
 #spaGPT-button {
   background-color: #4B0082 ;
+}
+
+#fastcam-button {
+  background-color: #aFD700 ;
 }
 
 body {
