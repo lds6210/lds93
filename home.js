@@ -13,31 +13,31 @@ fastcamButton.textContent = "소셜로그인";
 bohumButton.textContent = "보험찾기";
 
 gameButton.addEventListener("click", () => {
-  gameButton.textContent = "로딩 중...";
+  //gameButton.textContent = "로딩 중...";
   location.href = "./gameList/index.html";
 });
 
 chatButton.addEventListener("click", () => {
-  chatButton.textContent = "로딩 중...";
+  //chatButton.textContent = "로딩 중...";
   location.href = "./chatgpt/index.html";
 });
 
 pictureButton.addEventListener("click", () => {
-  pictureButton.textContent = "로딩 중...";
+  //pictureButton.textContent = "로딩 중...";
   location.href = "./pictureOfLife/index.html";
 });
 
 spaGPTButton.addEventListener("click", () => {
-  spaGPTButton.textContent = "로딩 중...";
+  //spaGPTButton.textContent = "로딩 중...";
   location.href = "./spaGPT/index.html";
 });
 
 fastcamButton.addEventListener("click", () => {
-  fastcamButton.textContent = "로딩 중...";
+  //fastcamButton.textContent = "로딩 중...";
   location.href = "./fastcam/index.html";
 });
 
 bohumButton.addEventListener("click", () => {
-  bohumButton.textContent = "로딩 중...";
+  //bohumButton.textContent = "로딩 중...";
   location.href = "https://cont.knia.or.kr/main.knia";
 });
