@@ -55,6 +55,10 @@ button {
   background-color: #aFD700 ;
 }
 
+#bohum-button {
+  background-color: #aFD700 ;
+}
+
 body {
   margin: 0;
   display: flex;

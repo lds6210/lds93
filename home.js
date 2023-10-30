@@ -3,12 +3,14 @@ const chatButton = document.querySelector("#chat-button");
 const pictureButton = document.querySelector("#picture-button");
 const spaGPTButton = document.querySelector("#spaGPT-button");
 const fastcamButton = document.querySelector("#fastcam-button");
+const bohumButton = document.querySelector("#bohum-button");
 
 gameButton.textContent = "게임";
 chatButton.textContent = "chatGPT";
 pictureButton.textContent = "인생네컷";
 spaGPTButton.textContent = "spaGPT";
 fastcamButton.textContent = "소셜로그인";
+bohumButton.textContent = "보험찾기";
 
 gameButton.addEventListener("click", () => {
   gameButton.textContent = "로딩 중...";
@@ -33,4 +35,9 @@ spaGPTButton.addEventListener("click", () => {
 fastcamButton.addEventListener("click", () => {
   fastcamButton.textContent = "로딩 중...";
   location.href = "./fastcam/index.html";
+});
+
+bohumButton.addEventListener("click", () => {
+  bohumButton.textContent = "로딩 중...";
+  location.href = "https://cont.knia.or.kr/main.knia";
 });
